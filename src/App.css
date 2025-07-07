@@ -1,0 +1,421 @@
+@font-face {
+  font-family: "Ancial";
+  src: local("Ancial"),
+    url("./font/ancial/fonts/webfonts/Ancial-Regular.woff") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Basteleur";
+  src: local("Basteleur"),
+    url("./font/basteleur/fonts/webfonts/Basteleur-Bold.woff")
+      format("truetype");
+  font-weight: bold;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+* {
+  color: #fed65e;
+  font-family: "Ancial", sans-serif;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: end;
+  width: 150px;
+  justify-content: end;
+  font-size: 50px;
+  color: #fed65e;
+}
+
+.navbar-logo {
+  width: 150px;
+}
+
+.navbar-date {
+  font-size: 50px;
+  color: #fed65e;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.popup-menu {
+  width: 100vw;
+  height: calc(100vh - 4rem);
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  background-color: black;
+}
+
+.popup-menu__link {
+  font-size: 80px;
+}
+
+.--rotated {
+  transform: rotate(-10deg);
+  display: inline-block;
+}
+
+#lineup,
+#artist,
+#info {
+  margin-top: 8rem;
+}
+
+#homepage {
+  margin-top: 4rem;
+}
+
+#homepage .fire__container {
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  justify-content: center;
+}
+
+#homepage .fire {
+  width: 500px;
+  height: 500px;
+  margin-top: 40px;
+}
+
+#homepage__slider {
+  width: 100%;
+  height: 100%;
+}
+
+#homepage .dancer {
+  width: 250px;
+  height: 250px;
+}
+
+#homepage #dancer1 {
+  position: absolute;
+  top: 800px;
+  right: 22.5%;
+}
+
+#homepage #dancer2 {
+  position: absolute;
+  top: 800px;
+  left: 25%;
+}
+
+#homepage #dancer3 {
+  position: absolute;
+  top: 900px;
+  left: 10%;
+  transform: scaleX(-1);
+}
+
+#homepage #dancer4 {
+  position: absolute;
+  top: 850px;
+  right: 10%;
+}
+
+#homepage .divider {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+}
+
+#homepage .additionalImages {
+  width: 100%;
+  position: sticky;
+  top: 1800px;
+}
+
+#homepage #placeholder {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  position: sticky;
+  z-index: 60;
+  background-image: url("/public/obrazky/1.jpg");
+  background-size: cover;
+}
+
+#homepage .text {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#homepage .texts {
+  margin-top: -30%;
+  width: 100%;
+}
+
+#homepage .texts p {
+  letter-spacing: 2px;
+
+  max-width: 600px;
+  border-radius: 25px;
+  background-color: #fed65e;
+  font-size: 2rem;
+  padding: 24px;
+  text-align: center;
+  z-index: 70;
+  color: black;
+  position: relative;
+  margin-bottom: 100vh;
+}
+
+#homepage .end {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+#homepage .sidebar-menu {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-right: 2rem;
+  font-size: 50px;
+  height: 100vh;
+  color: #fed65e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: right;
+  justify-content: center;
+}
+
+#lineup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#lineup .artist {
+  margin: 2rem 0;
+}
+
+#lineup__container {
+  width: calc(100% - 20rem);
+  height: auto;
+}
+
+#artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#info {
+  font-size: 1.75rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#info section {
+  width: 80%;
+  letter-spacing: 2px;
+}
+
+#info p {
+  margin: 1.75rem;
+}
+/* Responzivita pod 924px */
+
+@media only screen and (max-width: 924px) {
+  #homepage .fire {
+    width: 200px !important;
+    height: 200px !important;
+    margin-top: 40px !important;
+  }
+
+  #homepage .fire__container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #homepage .dancer {
+    width: 200px;
+    height: 200px;
+  }
+
+  #homepage #dancer1 {
+    position: absolute;
+    top: 100px;
+    right: 22.5%;
+  }
+
+  #homepage #dancer2 {
+    position: absolute;
+    top: 100px;
+    left: 25%;
+  }
+
+  #homepage #dancer3 {
+    position: absolute;
+    top: 200px;
+    left: 10%;
+    transform: scaleX(-1);
+  }
+
+  #homepage #dancer4 {
+    position: absolute;
+    top: 150px;
+    right: 10%;
+  }
+}
+
+/* Responzivita pod 724px */
+@media only screen and (max-width: 770px) {
+  .sidebar-menu {
+    display: none !important;
+  }
+}
+
+/* Responzivita pod 724px */
+@media only screen and (max-width: 724px) {
+  #homepage .fire {
+    width: 150px !important;
+    height: 150px !important;
+    margin-top: 40px !important;
+  }
+
+  #homepage .fire__container {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #homepage .dancer {
+    width: 150px;
+    height: 150px;
+  }
+
+  #homepage #dancer1 {
+    position: absolute;
+    top: 100px;
+    right: 22.5%;
+  }
+
+  #homepage #dancer2 {
+    position: absolute;
+    top: 100px;
+    left: 25%;
+  }
+
+  #homepage #dancer3 {
+    position: absolute;
+    top: 175px;
+    left: 10%;
+    transform: scaleX(-1);
+  }
+
+  #homepage #dancer4 {
+    position: absolute;
+    top: 125px;
+    right: 10%;
+  }
+}
+
+/* Responzivita pod 724px */
+@media only screen and (max-width: 600px) {
+  #homepage .fire {
+    width: 75vw !important;
+    height: 75vh !important;
+    margin-top: 40px !important;
+  }
+
+  #homepage .fire__container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  #homepage .dancer {
+    display: none !important;
+    width: 150px;
+    height: 150px;
+  }
+
+  #homepage .text p {
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    max-width: 80%;
+  }
+
+  #homepage .texts {
+    margin-top: -30%;
+    width: 100%;
+  }
+
+  #lineup__container {
+    width: unset;
+  }
+
+  #homepage .divider {
+    height: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #homepage .texts p {
+    font-size: 1.25rem;
+  }
+}
+
+.preload-images {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-image: url("/public/obrazky/1.jpg"), url("/public/obrazky/2.jpg"),
+    url("/public/obrazky/3.jpg"), url("/public/obrazky/4.jpg");
+}
