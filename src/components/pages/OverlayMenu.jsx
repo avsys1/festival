@@ -42,6 +42,20 @@ export function OverlayMenu({ isOpen, setIsOpen }) {
         >
           In<span className="--rotated hover:text-white ">f</span>o
         </Link>
+        <Link
+          to="https://t.me/+sLPjGaYpe045Yjg0"
+          className="hover:text-white popup-menu__link"
+          onClick={() => setIsOpen(false)}
+        >
+          Tele<span className="--rotated hover:text-white ">g</span>ram
+        </Link>
+        <Link
+          to="https://discord.gg/NThqMbWQvT"
+          className="hover:text-white popup-menu__link"
+          onClick={() => setIsOpen(false)}
+        >
+          Disc<span className="--rotated hover:text-white ">o</span>rd
+        </Link>
       </div>
     </div>
   );

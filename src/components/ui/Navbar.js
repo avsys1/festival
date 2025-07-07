@@ -78,6 +78,20 @@ const Navbar = () => {
             <Link to="/info" className="hover:text-white" onClick={toggleMenu}>
               Info
             </Link>
+            <Link
+              to="https://t.me/+sLPjGaYpe045Yjg0"
+              className="hover:text-white"
+              onClick={toggleMenu}
+            >
+              Telegram
+            </Link>
+            <Link
+              to="https://discord.gg/NThqMbWQvT"
+              className="hover:text-white"
+              onClick={toggleMenu}
+            >
+              Discord
+            </Link>
           </div>
         </div>
       )}

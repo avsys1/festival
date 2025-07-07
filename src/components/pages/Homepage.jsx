@@ -158,6 +158,15 @@ const Homepage = () => {
           <Link to="/info" className="hover:text-white">
             Info
           </Link>
+          <Link
+            to="https://t.me/+sLPjGaYpe045Yjg0"
+            className="hover:text-white"
+          >
+            Telegram
+          </Link>
+          <Link to="https://discord.gg/NThqMbWQvT" className="hover:text-white">
+            Discord
+          </Link>
         </div>
       </div>
       <div className="preload-images"></div>
